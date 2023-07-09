@@ -63,9 +63,9 @@ Response:
 503 Service Unavailable {"message":"Невозможно обновить книгу"}
 ```
 
-## Search (Поиск книг по 1 из параметров Название/Год издания/Автор)
+## Search (Поиск книг по 1 или нескольким параметрам ?s=Название&s=Год издания&s=Автор)
 ```
-GET - http://localhost/api/book/search.php?s=Булгаков
+GET - http://localhost/api/book/search.php?s=Булгаков&s=1866
 Response:
 200 OK
 {
