@@ -21,8 +21,8 @@ POST - http://localhost/api/book/create.php
 Body - JSON:
 {
   "name":"Лисья нора",
-	"year":"2019",
-	"author":"Нора Сакович"
+  "year":"2019",
+  "author":"Нора Сакович"
 }
 Response: 
 201 Created {"message": "Книга была создана."},
@@ -34,7 +34,19 @@ Response:
 ```
 GET - http://localhost/api/book/read.php
 Response:
-200 OK {"records":[{"id":""."name":"","year":"","author":""},{...},...]},
+200 OK
+{
+  "records":[
+	{
+	  "id":"",
+	  "name":"",
+	  "year":"",
+	  "author":""
+	},
+	{...},
+	...
+	]
+},
 404 Not Found {"message": "Книги не найдены."}
 
 ## Update (Обновление книги)
@@ -43,8 +55,8 @@ Body - JSON:
 {
   "id":"1",
   "name":"name",
-	"year":"2019",
-	"author":"author"
+  "year":"2019",
+  "author":"author"
 }
 Response:
 200 OK {"message": "Книга была обновлена"},
@@ -55,8 +67,21 @@ Response:
 ```
 GET - http://localhost/api/book/search.php?s=Булгаков
 Response:
-200 OK {"records":[{"id":""."name":"","year":"","author":""},{...},...]},
-404 Not Found {"message": "Книги не найдены."}
+200 OK
+{
+  "records":[
+	{
+	  "id":"",
+	  "name":"",
+	  "year":"",
+	  "author":""
+	},
+	{...},
+	...
+	]
+},
+404 Not Found
+{ "message": "Книги не найдены. }
 ```
 
 ## Delete (Удаление книги по id)
