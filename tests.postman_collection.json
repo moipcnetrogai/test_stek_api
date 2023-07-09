@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "b8791148-7eec-45a9-8c99-d7a117c9cab6",
+		"name": "test_postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28422020"
+	},
+	"item": [
+		{
+			"name": "load db_dump (use at start testing)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/config/start.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"config",
+						"start.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/book/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"book",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/book/search.php?s=Булгаков&s=1925&s",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"book",
+						"search.php"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "Булгаков"
+						},
+						{
+							"key": "s",
+							"value": "1925"
+						},
+						{
+							"key": "s",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\":\"Лисья нора\",\r\n\t\"year\":\"2019\",\r\n\t\"author\":\"Нора Сакович\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/book/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"book",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":\"9\",\r\n\t\"name\":\" \"Деда\",\r\n\t\"year\":\"1700\",\r\n\t\"author\":\"Александр Дедович\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/book/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"book",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":\"9\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/book/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"book",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
