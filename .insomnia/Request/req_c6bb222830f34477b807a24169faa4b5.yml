@@ -1,0 +1,21 @@
+_id: req_c6bb222830f34477b807a24169faa4b5
+type: Request
+parentId: fld_60bb409f9589407fbe2a1315492d25a2
+modified: 1688902371059
+created: 1688902222219
+url: http://localhost/api/config/start.php
+name: load db_dump (use at start testing)
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1688902222219
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
