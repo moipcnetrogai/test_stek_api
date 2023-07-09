@@ -1,0 +1,30 @@
+_id: req_9e6095aba30a4b4497ea6ca7765dd3ed
+type: Request
+parentId: fld_60bb409f9589407fbe2a1315492d25a2
+modified: 1688900699132
+created: 1688900611651
+url: http://localhost/api/book/create.php
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"Лисья нора",
+    	"year":"2019",
+    	"author":"Нора Сакович"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1688900611651
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

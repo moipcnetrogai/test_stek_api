@@ -1,0 +1,28 @@
+_id: req_be0a29f77e7c4098a1287269f4e19979
+type: Request
+parentId: fld_60bb409f9589407fbe2a1315492d25a2
+modified: 1688901242304
+created: 1688900857659
+url: http://localhost/api/book/delete.php
+name: Delete
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id":"9"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1688900857659
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

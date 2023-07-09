@@ -1,0 +1,31 @@
+_id: req_1d517219ce39431d99be8330b300532e
+type: Request
+parentId: fld_60bb409f9589407fbe2a1315492d25a2
+modified: 1688900842433
+created: 1688900704745
+url: http://localhost/api/book/update.php
+name: Update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id":"9",
+    	"name":"Евгений Онегин",
+    	"year":"1700",
+    	"author":"Александр Пушкин"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1688900704745
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
