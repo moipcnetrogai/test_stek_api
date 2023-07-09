@@ -9,11 +9,14 @@
 
 ## load db_dump (загрузка дампа бд)
 Необходимо выполнить перед дальнейшим тестированием апи.
+```
 Get - http://localhost/api/config/start.php
 Response:
 200 OK Success
+```
 
 ## Create (создание/добавление книги)
+```
 POST - http://localhost/api/book/create.php
 Body - JSON:
 {
@@ -25,8 +28,10 @@ Response:
 201 Created {"message": "Книга была создана."},
 503 Service Unavailable {"message":"Невозможно создать книгу."},
 400 Bad Request {"message":"Невозможно создать книгу. Данные неполные."}
+```
 
 ## List (Список книг)
+```
 GET - http://localhost/api/book/read.php
 Response:
 200 OK {"records":[{"id":""."name":"","year":"","author":""},{...},...]},
@@ -44,14 +49,18 @@ Body - JSON:
 Response:
 200 OK {"message": "Книга была обновлена"},
 503 Service Unavailable {"message":"Невозможно обновить книгу"}
+```
 
 ## Search (Поиск книг по 1 из параметров Название/Год издания/Автор)
+```
 GET - http://localhost/api/book/search.php?s=Булгаков
 Response:
 200 OK {"records":[{"id":""."name":"","year":"","author":""},{...},...]},
 404 Not Found {"message": "Книги не найдены."}
+```
 
 ## Delete (Удаление книги по id)
+```
 DELETE - http://localhost/api/book/delete.php
 Body - JSON:
 {
@@ -60,3 +69,4 @@ Body - JSON:
 Response:
 200 OK {"message": "Книга была удалена"},
 503 Service Unavailable {"message":"Не удалось удалить книгу"}
+```
