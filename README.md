@@ -8,9 +8,9 @@
 Если же у вас нету Insomnia далее идет описание роутов приложения:
 
 ## load db_dump (загрузка дампа бд)
-Необходимо выполнить перед дальнейшим тестированием апи.
-Get - http://localhost/api/config/start.php
-Response:
+Необходимо выполнить перед дальнейшим тестированием апи.\n
+Get - http://localhost/api/config/start.php\n
+Response:\n
 200 OK Success
 
 ## Create (создание/добавление книги)
